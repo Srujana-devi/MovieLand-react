@@ -3,16 +3,9 @@ import "./App.css"
 import SearchIcon from "./search.svg"
 import MovieCard from "./MovieCard";
 
-//bc76104
+
 const API_URL = "http://www.omdbapi.com?apikey=bc76104"
-const movie =
-  {
-    "Title": "Italian Spiderman",
-    "Year": "2007",
-    "imdbID": "tt2705436",
-    "Type": "movie",
-    "Poster": "https://google.com"
-}
+
 
 const App = () =>{
   const [movies, setMovies] = useState([]);
