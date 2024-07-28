@@ -4,7 +4,9 @@ import SearchIcon from "./search.svg"
 import MovieCard from "./MovieCard";
 
 
-const API_URL = "http://www.omdbapi.com?apikey=?{process.env.REACT_APP_API_KEY}"
+
+const API_URL = 'http://www.omdbapi.com?apikey=bc76104'
+
 
 
 const App = () =>{
@@ -16,13 +18,13 @@ const App = () =>{
     setMovies(data.Search);
   }
   useEffect(()=>{
-    searchMovies('Superman');
+    searchMovies('Batman');
   },[])
   return (
     <div className = "App">
     <h1>MovieLand</h1>
     <div className = "search">
-    <input placeholder = "Search for Movies" value = {searchTerm} onChange = {(e)=>setSearchTerm(e.target.value)}/>
+    <input placeholder = "Search the poster" value = {searchTerm} onChange = {(e)=>setSearchTerm(e.target.value)}/>
 <img src = {SearchIcon} alt = "search" onClick = {()=>searchMovies(searchTerm)}/>
     </div>
     {
