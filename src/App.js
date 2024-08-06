@@ -4,13 +4,10 @@ import SearchIcon from "./search.svg"
 import MovieCard from "./MovieCard";
 
 
-<<<<<<< HEAD
 
-const API_URL = 'http://www.omdbapi.com?apikey=bc76104'
+const API_URL = 'http://www.omdbapi.com?apikey=${process.env.REACT_APP_API_KEY}'
 
-=======
-const API_URL = "http://www.omdbapi.com?apikey={process.env.REACT_APP_API_KEY}"
->>>>>>> ba68bf7d883cd9620a59607dcd558a543482d722
+
 
 
 const App = () =>{
